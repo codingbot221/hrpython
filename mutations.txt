@@ -1,0 +1,5 @@
+def mutate_string(string, position, character):
+    list = [x for x in s]
+    list[int(i)] = c
+    string = ''.join(list)
+    return string

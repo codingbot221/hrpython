@@ -1,0 +1,2 @@
+#print(eval(input().strip()))   #this is an example of that
+eval(input().strip())

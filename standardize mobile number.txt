@@ -1,0 +1,10 @@
+def wrapper(f):
+    def fun(l):
+        p=list()
+        for x in l:
+            x=x[-10:]
+            p.append(x)
+        p=sorted(p)
+        for _ in p:            
+            print('+91',_[-10:-5],_[-5:])
+    return fun

@@ -1,0 +1,5 @@
+letter_cnt = Counter(input())
+top_three = sorted(letter_cnt.items(),
+                   key=lambda x: (-x[1], x[0]))[:3]
+print(*(f"{letter} {cnt}" for letter, cnt in top_three),
+      sep="\n")

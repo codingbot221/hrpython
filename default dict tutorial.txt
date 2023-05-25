@@ -1,0 +1,17 @@
+from collections import defaultdict
+
+m,n=map(int,input().split())
+mydict=defaultdict(list)
+B=[]
+
+for i in range(m):
+    mydict[input()].append(i+1)
+
+for i in range(n):
+    B.append(input())
+
+for i in B:
+    if i in mydict.keys():
+    
+        print(*mydict[i])
+    else: print(-1)

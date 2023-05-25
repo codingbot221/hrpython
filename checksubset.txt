@@ -1,0 +1,7 @@
+n=int(input())
+
+for i in range(n):
+    k,A=input(),set(map(int,input().split()))    
+    j,B=input(),set(map(int,input().split()))
+    if A.issubset(B): print(True)
+    else:print(False)

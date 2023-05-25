@@ -1,0 +1,11 @@
+if __name__ == '__main__':
+    studs = {}
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        try:
+            studs[score].append(name)
+        except:
+            studs[score] = [name]
+    scores = sorted([score for score in studs.keys()])
+    print(*sorted(studs[scores[1]]), sep='\n')

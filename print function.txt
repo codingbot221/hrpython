@@ -1,0 +1,10 @@
+if __name__ == '__main__':
+    n = int(input())
+    
+    def series(n,init,cnt):
+        if (n>=cnt):
+            init+=str(cnt)
+            return series(n,init,cnt+1)
+        else:
+            print(init)
+    series(n,"",1)

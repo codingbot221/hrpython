@@ -1,0 +1,3 @@
+n_eng, set_eng = input().strip(), set(input().strip().split())
+n_french, set_french = input().strip(), set(input().strip().split())
+print(len(set_eng.union(set_french)))

@@ -1,0 +1,21 @@
+rom html.parser import HTMLParser
+
+class myparser(HTMLParser):
+    def handle_starttag(self, tag, attrs):
+        print('Start : '+tag)
+        if attrs:
+            for i in attrs:
+                if i[1]:
+                    print('-> '+i[0],'> '+i[1])
+                else:
+                    print('-> '+i[0]+' > None')
+    def handle_endtag(self, tag) :
+        print('End   : '+tag)
+    def handle_startendtag(self, tag, attrs):
+        print('Empty : '+tag)  
+   
+s=''''''
+for _ in range(int(input())):
+    s=s+input()
+one = myparser()
+one.feed(s)

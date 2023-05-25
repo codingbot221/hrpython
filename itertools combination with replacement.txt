@@ -1,0 +1,6 @@
+from itertools import combinations_with_replacement
+
+S, k = [int(el) if el.isdigit() else el for el in input().split(" ")]
+
+for cmb in sorted([sorted(i) for i in sorted(list(combinations_with_replacement(S, k)))]):
+    print("".join(c for c in cmb))

@@ -1,0 +1,12 @@
+contents1 = int(input())
+nums1 = input()
+nums1 = list(map(int, nums1.split()))
+contents2 = int(input())
+nums2 = input()
+nums2 = list(map(int, nums2.split()))
+overlaps = 0
+for nums in nums1:
+    for digits in nums2:
+        if digits == nums:
+            overlaps = overlaps + 1
+print(overlaps)

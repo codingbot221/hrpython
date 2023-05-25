@@ -1,0 +1,14 @@
+import math
+a=input()
+b=input()
+c=input()
+our_str=''.join(b.split())
+c=int(c)
+a=our_str.count('a')
+l=len(our_str)
+if c > l-a:
+    answer=1
+else:
+    answer=1-math.factorial(l-a)/math.factorial(l-a-c)/math.factorial(l)*math.factorial(l-c)
+    
+print(answer)

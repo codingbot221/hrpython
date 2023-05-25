@@ -1,0 +1,10 @@
+import re
+T = int(input())
+if 0 < T < 100:
+    for _ in range(T):
+        string = input()
+        try:
+            re.compile(string)
+            print(True)
+        except re.error:
+            print(False)

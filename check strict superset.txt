@@ -1,0 +1,18 @@
+A=set(map(int,input().split()))
+n=int(input())
+other_set=[]
+
+flag=0
+for i in range(n):
+    s=set(map(int,input().split()))
+    other_set.append(s)
+    if A.issuperset(other_set[i]):
+        if len(A.difference(other_set[i]))>=1:
+            flag+=1
+        else:
+            print("False")
+    else:
+        print("False")
+        break
+if flag==n:
+    print("True")

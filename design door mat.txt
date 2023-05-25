@@ -1,0 +1,15 @@
+N, M = map(int, input().split(' '))
+
+cnt = 1
+for i in range(N//2):
+    p = '.|.' * cnt
+    print(p.center(M, '-'))
+    cnt += 2
+
+print('WELCOME'.center(M, '-'))
+
+cnt = N-2
+for i in range(N//2):
+    p = '.|.' * cnt
+    print(p.center(M, '-'))
+    cnt -= 2

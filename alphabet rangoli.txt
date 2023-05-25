@@ -1,0 +1,19 @@
+def print_rangoli(size):
+    w = (size - 1) * 4 + 1
+    for i in range(1, 2 * size + 1, 2):
+        r = int((i-1)/2)
+        x = ''
+        for j in range(-r, r+1):
+            x += chr(96 + size - r + abs(j))
+
+        res = '-'.join(x)
+        print(res.center(w, '-'))
+
+    for i in range(7, 2 * size + 5, 2):
+        r = int(size - (i - 1) / 2 + 1)
+        x = ''
+        for j in range(-r, r + 1):
+            x += chr(96 + size - r + abs(j))
+
+        res = '-'.join(x)
+        print(res.center(w, '-'))

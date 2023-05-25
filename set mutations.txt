@@ -1,0 +1,12 @@
+n = int(input())
+
+lst = set(map(int,input().split()))
+
+t = int(input())
+
+for _ in range(t):
+    a,b = input().split()
+    b_lst = map(int,input().split())
+    getattr(lst,a)(b_lst)
+    
+print(sum(lst))

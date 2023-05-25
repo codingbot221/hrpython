@@ -1,0 +1,6 @@
+def solve(s):
+
+    #t=[x.capitalise() for x in s.split(' ')]
+    t=[x.capitalize() for x in s.split(' ')]
+    
+    return ' '.join(t)

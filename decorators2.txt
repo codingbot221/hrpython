@@ -1,0 +1,5 @@
+def person_lister(f):
+    def inner(people):
+        sorted_list = sorted(people, key=lambda x: int(x[2]))
+        return list(map(lambda each: f(each), sorted_list)) 
+    nreturn inner

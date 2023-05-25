@@ -1,0 +1,5 @@
+def get_attr_number(node):
+    count=0
+    for child in node.iter():
+        count+=len(child.attrib)
+    return count

@@ -1,0 +1,7 @@
+from itertools import product
+
+s1_list = list(map(int, input().split()))
+s2_list = list(map(int, input().split()))
+
+prod = list(product(s1_list, s2_list))
+print(*prod)

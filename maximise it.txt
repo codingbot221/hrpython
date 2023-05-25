@@ -1,0 +1,11 @@
+import itertools
+req_list=[]
+k,m=input().split()
+m=int(m)
+k=int(k)
+lists=[]
+for i in range(k):
+    lists+=[[int(a)**2 for a in input().split()[1:]]]
+for item in itertools.product(*lists):
+    req_list.append(sum(item)%m)
+print(max(req_list))

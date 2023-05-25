@@ -1,0 +1,7 @@
+M-int=int(input())
+M=set(map(int,input().split()))
+N_int=int(input())
+N=set(map(int,input().split()))
+print('\n'.join(map(str,sorted(M.symmetric_difference(N)))))
+
+

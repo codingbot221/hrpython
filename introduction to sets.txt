@@ -1,0 +1,7 @@
+def average(array):
+    # your code goes here
+    #we use set to remove duplicate elements
+    s = sum(set(array))
+    l = len(set(array))
+    av = s/l
+    return (av)

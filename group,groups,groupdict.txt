@@ -1,0 +1,6 @@
+import re
+
+S = input()
+if 0 < len(S) < 100:
+    out = re.search(r"([0-9a-zA-Z])\1+", S)
+    print(out.group(1)) if out else print(-1)

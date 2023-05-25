@@ -1,0 +1,3 @@
+import re
+for _ in range(int(input())):
+    print(bool(re.fullmatch('[+-]?\d*\.\d+', input())))

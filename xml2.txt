@@ -1,0 +1,6 @@
+def depth(elem, level):
+    global maxdepth
+    maxdepth = level + 1 if level + 1 > maxdepth else maxdepth
+
+    for child in elem:
+        depth(child, level + 1)

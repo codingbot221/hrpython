@@ -1,0 +1,11 @@
+import re
+
+for _ in range(int(input())):
+    uid = input()
+    if re.search("[\d]{3,}[A-Z]{2,}", ''.join(sorted([*uid]))) \
+                 and sum([1 for i in set(uid) if uid.count(i)>1])==0 \
+                 and re.search("[a-zA-Z0-9]", uid) \
+                 and len(uid)==10:
+        print("Valid")
+    else:
+        print("Invalid")

@@ -1,0 +1,7 @@
+import re
+p=r'(?<=[:\s])(#{1}[0-9a-fA-F]{3,6}(?=[;\s,)]))'
+for i in range(int(input())):
+    html=input()
+    m=re.findall(p,html)
+    if len(m)>0:
+        [print (i) for i in m]

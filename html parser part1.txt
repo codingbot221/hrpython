@@ -1,0 +1,7 @@
+def handle_endtag(self, tag):
+    print ('End   :', tag)
+
+def handle_startendtag(self, tag, attrs):
+    print ('Empty :', tag)
+    for ele in attrs:
+        print ('->', ele[0], '>', ele[1])

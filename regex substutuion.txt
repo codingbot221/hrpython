@@ -1,0 +1,7 @@
+mport re
+
+def sub(text):
+        return {'&&': 'and', '||': 'or'}[text.group(0)]
+
+for _ in range(int(input())):
+        print(re.sub(r'(?<=[ ])([&|])\1(?=[ ])', sub, input()))

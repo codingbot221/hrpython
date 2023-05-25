@@ -1,0 +1,9 @@
+item_dict = {}
+
+for _ in range(int(input())):
+    item, price = input().rsplit(" ", 1)
+    
+    item_dict[item] = item_dict.get(item, 0) + int(price)
+
+for item, price in item_dict.items():
+    print(f"{item} {price}")
